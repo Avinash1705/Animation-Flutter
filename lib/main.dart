@@ -1,3 +1,4 @@
+import 'package:animation/custom_explicit_animation_heart.dart';
 import 'package:flutter/material.dart';
 
 import 'animation_container.dart';
@@ -47,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       title: Text(widget.title),
       ),
-      body: MyAnimation() // This trailing comma makes auto-formatting nicer for build methods.
+      body: Heart() // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
