@@ -15,7 +15,8 @@ class _MyAnimationState extends State<MyAnimation> {
   @override
   Widget build(BuildContext context) {
     return TweenAnimationBuilder(
-        duration: Duration(seconds: 2),
+        duration: Duration(seconds: 4),
+       // curve: Curves.bounceInOut,                                  //define curve in implicit animation
         tween: Tween<double>(begin: 0,end: 100),
         builder: (BuildContext context, double value, Widget? child) {
           return Container(
